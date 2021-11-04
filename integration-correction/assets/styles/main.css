@@ -10,17 +10,36 @@
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--green-light);
+  margin-bottom: 2rem;
 }
 header .header__logo {
   width: 2rem;
 }
-header .header__nav--list {
+header .header__nav {
   display: none;
+  order: 3;
+  width: 100%;
 }
 header .showNav {
   display: flex !important;
   flex-direction: column;
+}
+
+section {
+  margin: 1rem 2rem;
+}
+section h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+section h1 span.color-title {
+  color: var(--green-dark);
 }/*# sourceMappingURL=main.css.map */

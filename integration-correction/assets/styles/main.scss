@@ -9,17 +9,34 @@
   }
 header{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       padding: 2rem;
       align-items: center;
+      position: sticky;
+      top: 0;
+      background-color: var(--green-light);
+      margin-bottom: 2rem;
       .header__logo{
             width: 2rem;
       }
-      .header__nav--list{
+      .header__nav{
             display: none;
+            order: 3;
+            width: 100%;
       }
       .showNav{
             display: flex !important;
             flex-direction: column;
+      }
+}
+section{
+      margin: 1rem 2rem;
+      h1{
+            text-align: center;
+            font-size: 2rem;
+            span.color-title{
+                  color: var(--green-dark);
+            }
       }
 }

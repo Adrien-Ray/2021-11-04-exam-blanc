@@ -2,7 +2,12 @@
   header .header__logo {
     width: 4rem;
   }
-  header .header__nav--list {
+  header .header__nav {
+    display: block;
+    order: auto;
+    width: auto;
+  }
+  header .header__nav .header__nav--list {
     display: flex;
     flex-direction: row;
     width: 72vw;
@@ -10,5 +15,10 @@
   }
   header #header__nav--burger {
     display: none;
+  }
+
+  section {
+    width: 800px;
+    width: auto;
   }
 }/*# sourceMappingURL=desktop.css.map */
