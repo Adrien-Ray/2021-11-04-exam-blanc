@@ -162,16 +162,16 @@
   }
   @keyframes hoverimg {
         from{
-            filter: blur(0) sepia(0%);
+            filter: blur(0) brightness(1);
         }to{
-            filter: blur(1px) sepia(100%);
+            filter: blur(1px) brightness(1.5);
         }
   }
   @keyframes hoverimg2 {
         from{
-            filter: blur(1px) sepia(100%);
+            filter: blur(1px) brightness(1.5);
         }to{
-            filter: blur(0) sepia(0%);
+            filter: blur(0) brightness(1);
         }
   }
   @keyframes bodyanimation {
