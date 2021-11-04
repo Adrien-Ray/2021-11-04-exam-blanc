@@ -1,0 +1,16 @@
+@media (min-width: 600px){
+      header{
+            .header__logo{
+                  width: 4rem;
+            }
+            .header__nav--list{
+                  display: flex;
+                  flex-direction: row;
+                  width: 72vw;
+                  justify-content: space-evenly;
+            }
+            #header__nav--burger{
+                  display: none;
+            }
+      }
+}

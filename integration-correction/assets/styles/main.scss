@@ -1,0 +1,25 @@
+:root {
+      --white: #ffffff;
+      --gray-light: #f5fbfc;
+      --gray-dark: #08090a;
+      --green: #35b8be;
+      --green-dark: #1b9097;
+      --green-light: #f5fbfc;
+      --blue-dark: #546285;
+  }
+header{
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      align-items: center;
+      .header__logo{
+            width: 2rem;
+      }
+      .header__nav--list{
+            display: none;
+      }
+      .showNav{
+            display: flex !important;
+            flex-direction: column;
+      }
+}

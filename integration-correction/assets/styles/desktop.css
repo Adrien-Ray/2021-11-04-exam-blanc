@@ -1,0 +1,14 @@
+@media (min-width: 600px) {
+  header .header__logo {
+    width: 4rem;
+  }
+  header .header__nav--list {
+    display: flex;
+    flex-direction: row;
+    width: 72vw;
+    justify-content: space-evenly;
+  }
+  header #header__nav--burger {
+    display: none;
+  }
+}/*# sourceMappingURL=desktop.css.map */
