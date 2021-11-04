@@ -35,8 +35,42 @@ section{
       h1{
             text-align: center;
             font-size: 2rem;
+            padding: 2rem 0;
+            font-weight: 700;
             span.color-title{
                   color: var(--green-dark);
+            }
+      }
+      .section__flex{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            align-items: center;
+            justify-content: center;
+            img{
+                  max-width: 15rem;
+                  margin: 4rem auto;
+            }
+            .section__flex--right{
+                  width: 30rem;
+                  margin: auto;
+                  text-align: center;
+                  p{
+                        padding: 2rem 0;
+                        font-weight: 500;
+                        line-height: 150%;
+                  }
+                  .section__flex--right--button{
+                        //text-align: right;
+                        a{
+                              background-color: var(--green);
+                              background-image: url('../ico/button_wave.svg');
+                              background-size: cover;
+                              color: var(--white);
+                              padding: 1rem 2rem;
+                              border-radius: 0.5rem;
+                              margin-bottom: 4rem;
+                        }
+                  }
             }
       }
 }

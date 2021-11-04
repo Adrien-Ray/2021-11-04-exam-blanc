@@ -21,6 +21,14 @@
       section{
             width: 800px;
             width: auto;
-
+            h1{
+                  margin-top: 3rem;
+                  margin-bottom: 3rem;
+            }
+            .section__flex{
+                  img{
+                        margin: 0rem 2rem;
+                  }
+            }
       }
 }
