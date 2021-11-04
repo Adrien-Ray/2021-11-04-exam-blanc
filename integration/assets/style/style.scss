@@ -1,0 +1,185 @@
+@font-face{
+      font-family: "Inter";
+      src: url("../font/Inter-VariableFont.ttf");
+}
+:root {
+      --white: #ffffff;
+      --gray-light: #f5fbfc;
+      --gray-dark: #08090a;
+      --green: #35b8be;
+      --green-dark: #1b9097;
+      --green-light: #f5fbfc;
+      --blue-dark: #546285;
+  }
+  html{
+        font-size: 20px;
+  }
+
+  *{
+      font-family: "Inter" !important;
+      color: var(--gray-dark);
+  }
+
+  body{
+      animation-name: bodyanimation;
+      animation-duration: 0.6s;
+  }
+
+  .logonavbar{
+      height: 3rem;
+  }
+  .nav__div{
+      .nav__div__ul{
+            width: 100%;
+            justify-content: center;
+      }
+  }
+  .navbar-toggler, .collapsed, button, button:active, button:focus{
+      border: none !important;
+      box-shadow: none !important;
+  }
+  section{
+        margin: 1.5rem;
+        .section__button{
+              background-image: url("../img/button_wave.svg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-color: var(--green);
+              color: var(--gray-light);
+              font-size: 1.5rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              margin-top: 2rem;
+              &:focus{
+                    animation-name: animbutton;
+                    animation-fill-mode: forwards;
+                    animation-duration: 0.5s;
+              }
+              &:not(:focus){
+                  animation-name: animbutton2;
+                  animation-fill-mode: forwards;
+                  animation-duration: 0.5s;
+              }
+        }
+        .section__flex{
+              display: flex;
+              flex-wrap: wrap-reverse;
+              align-items: center;
+              justify-content: space-evenly;
+              img{
+                    max-width: 100%;
+                    width: 20rem;
+                    animation-fill-mode: forwards;
+                    animation-duration: 0.5s;
+                    animation-delay: 0s;
+                    &:hover{
+                        animation-name: hoverimg;
+                    }
+                    &:not(:hover){
+                        animation-name: hoverimg2;
+                    }
+              }
+              p{
+                    max-width: 100%;
+                    width: 25rem;
+                    text-align: center;
+              }
+        }
+        .section__child{
+              margin: 5rem 0;
+              margin-top: 1rem;
+        }
+        h2{
+              font-weight: 700;
+              font-size: 3rem;
+              text-align: center;
+              padding-top: 5rem;
+              .h2__color{
+                    color: var(--green-dark);
+              }
+        }
+        p{
+              color: var(--blue-dark);
+              line-height: 170%;
+        }
+        .section__cards__parent{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-evenly;
+              .card{
+                    border: none;
+                    text-align: center;
+                    img{
+                        animation-fill-mode: forwards;
+                        animation-duration: 0.5s;
+                        animation-delay: 0s;
+                        animation-name: hoverimg2;
+                        &:hover{
+                              animation-name: hoverimg;
+                        }
+                    }
+                    span.card_title{
+                          font-weight: 600;
+                    }
+              }
+        }
+  }
+  footer{
+        background-color: var(--green-light);
+        padding: 2rem;
+        font-weight: 600;
+        p{
+              &:nth-child(1){
+                    color: var(--green-dark);
+                    padding-bottom: 2rem;
+              }
+              &:nth-child(2){
+                    color: var(--blue-dark);
+                    a{
+                        color: var(--blue-dark);
+                        text-decoration: none; 
+                        &:nth-child(1){
+                              margin-right: 3rem;
+                        }
+                    }
+              }
+        }
+  }
+
+  @keyframes animbutton {
+        from{
+            background-color: var(--green);
+        }to{
+            background-color: orange;
+        }
+  }
+  @keyframes animbutton2 {
+        from{
+            background-color: orange;
+        }to{
+            background-color: var(--green);
+        }
+  }
+  @keyframes hoverimg {
+        from{
+            filter: blur(0) sepia(0%);
+        }to{
+            filter: blur(1px) sepia(100%);
+        }
+  }
+  @keyframes hoverimg2 {
+        from{
+            filter: blur(1px) sepia(100%);
+        }to{
+            filter: blur(0) sepia(0%);
+        }
+  }
+  @keyframes bodyanimation {
+        from{
+            transform: scaleX(0);
+        }to{
+            transform: scaleX(1);
+        }
+  }
+
+  
